@@ -15,7 +15,7 @@ mode = st.selectbox("Transmission mode", [1, 2, 3, 4], format_func=lambda x: ["H
 origin = st.selectbox("Country of origin", [1, 2, 3], format_func=lambda x: ["Spain", "Not Spain", "Unknown"][x-1])
 edu = st.selectbox("Education level", [1, 2, 3], format_func=lambda x: ["Primary", "University/Higher", "Unknown"][x-1])
 aids = st.selectbox("Previous AIDS diagnosis", [1, 2], format_func=lambda x: "No" if x == 1 else "Yes")
-art_cat = st.selectbox("Year of ART initiation", [1, 2, 3, 4], format_func=lambda x: ["2004–2007", "2008–2011", "2012–2015", "2016–2021"][x-1])
+art_cat = st.selectbox("Year of ART initiation", [1, 2, 3, 4], format_func=lambda x: ["2004–2007", "2008–2011", "2012–2015", "≥2016"][x-1])
 hbv = st.selectbox("Hepatitis B coinfection", [1, 2], format_func=lambda x: "No" if x == 1 else "Yes")
 hcv = st.selectbox("Hepatitis C coinfection", [1, 2], format_func=lambda x: "No" if x == 1 else "Yes")
 vl_cat = st.selectbox("Initial viral load", [1, 2, 3], format_func=lambda x: ["<100,000", "≥100,000", "Unknown"][x-1])
